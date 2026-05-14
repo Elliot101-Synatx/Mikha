@@ -1438,7 +1438,7 @@
     const msg = encodeURIComponent(
       `Hi Mikha! I'd like to book an appointment.\n\nName: ${name}\nPhone: ${phone}\nEmail: ${email || 'N/A'}\nService: ${service}\nPreferred date: ${date || 'Flexible'}\n\nNotes: ${document.getElementById('f-notes').value || 'None'}`
     );
-    window.open(`https://api.whatsapp.com/send?phone=27685599850?text=${msg}`, '_blank');
+    window.open(`https://wa.me/27685599850?text=${msg}`, '_blank');
     document.getElementById('formSuccess').classList.add('show');
   }
 
